@@ -1,0 +1,80 @@
+body {
+  font-size: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 1050px;
+  display: grid;
+  grid-template: 
+      "... ...... ...... ...... ..." 10px
+      "... header header header ..." 80px
+      "... ...... ...... ...... ..." 20px
+      "... left0  ...... right0 ..." 1fr
+      "... ...... ...... ...... ..." 20px
+      "... left1  ...... right1 ..." 1fr
+      "... ...... ...... ...... ..." 20px
+      "... left2  ...... right2 ..." 1fr
+      "... ...... ...... ...... ..." 20px
+      "... aside  ...... ...... ..." 20px
+      "... ...... ...... ...... ..." 20px
+      "... footer footer footer ..." 50px
+      "... ...... ...... ...... ..." 20px
+      /20px 1fr  20px  1fr  20px ;
+}
+header {
+  grid-area: header;
+}
+.container0 {
+  grid-area: left0;
+  background-color: rgb(238, 243, 230);
+}
+.container1 {
+  grid-area: right0;
+  background-color: rgb(238, 243, 230);
+}
+.container2 {
+  grid-area: left1;
+  background-color: rgb(238, 243, 230);
+}
+.container3 {
+  grid-area: right1;
+  background-color: rgb(238, 243, 230);
+}
+.container4 {
+  grid-area: left2;
+  background-color: rgb(238, 243, 230);
+}
+.container5 {
+  grid-area: right2;
+  background-color: rgb(238, 243, 230);
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  grid-area: footer;
+}
+@media screen and (max-width:800px) {
+  body{
+    grid-template:
+     "... ...... ..." 10px
+     "... header ..." 80px
+     "... ...... ..." 20px
+     "... left0  ..."
+     "... ...... ..." 20px
+     "... right0 ..."
+     "... ...... ..." 20px
+     "... left1  ..."
+     "... ...... ..." 20px
+     "... right1 ..."
+     "... ...... ..." 20px
+     "... left2  ..."
+     "... ...... ..." 20px
+     "... right2 ..." 
+     "... ...... ..." 20px
+     "... aside  ..." 40px
+     "... ...... ..." 30px
+     "... footer ..." 50px
+     "... ...... ..." 10px
+     / 20px 1fr 20px ;
+  }
+}
